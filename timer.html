@@ -11,17 +11,12 @@
     <input type="text" id = "sec">
     <button id = "start">開始</button>
     <audio src="sound.mp3" id = "sound"></audio>
-
-
     <script>
-        //画面:タイマー秒数、スタートボタン、何秒経過したか表示
-        //スタートクリックイベント
         const time  = document.querySelector("#time");
         const sec   = document.querySelector("#sec");
         const start = document.querySelector("#start");
         let count   = 0;
         const s     = 1000;
-
         start.onclick = function(){
             const set_id = setInterval(function(){
                 count++;
@@ -32,10 +27,6 @@
                 }
             },s);
         }
-
-
-
     </script>
-    
 </body>
 </html>
